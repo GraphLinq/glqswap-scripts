@@ -9,7 +9,7 @@ const provider = new ethers.providers.JsonRpcProvider(`https://glq-dataseed.grap
 const wallet = new ethers.Wallet(WALLET_PRIVATE_KEY, provider);
 
 // Uniswap V3 Factory contract address (mainnet)
-const UNISWAP_V3_FACTORY_ADDRESS = '0xEE97bd5cC4c11c2784060dB3AE721cF47888670f';
+const UNISWAP_V3_FACTORY_ADDRESS = '0x0E70926aE867D4dE6E056C29FaB16b0896B731Bf';
 
 // Tokens you want to create a pool with
 const tokenA = '0xbeED106D0f2e6950BFa1Eec74E1253CA0a643442'; // WETH

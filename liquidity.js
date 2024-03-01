@@ -20,7 +20,7 @@ const ERC20ABI = [
 // Configuration
 const providerUrl = 'https://glq-dataseed.graphlinq.io'; // Change to your Infura project ID
 const privateKey = '';
-const positionManagerAddress = '0x1e4F1736540b5eddd4788D30aa1030697FF93488'; // Uniswap V3 NonfungiblePositionManager address
+const positionManagerAddress = '0x9527542236724B2D1e54F97FC62375a72Bc950cE'; // Uniswap V3 NonfungiblePositionManager address
 
 // Initialize ethers provider and wallet
 const provider = new ethers.providers.JsonRpcProvider(providerUrl);
@@ -29,9 +29,9 @@ const wallet = new ethers.Wallet(privateKey, provider);
 const tokenB = new Token(614, "0xbeED106D0f2e6950BFa1Eec74E1253CA0a643442", 18, "WETH", "Wrapped Ethereum");
 const tokenA = new Token(614, "0xEB567ec41738c2bAb2599A1070FC5B727721b3B6", 18, "WGLQ", "Wrapped Graphlinq GLQ");
 
-const currentPoolAddress = "0x87F7ED300de2f7CD64E613a0fcD375A3Cfd1D385"
-const amountA = '100000000000000000'; // 0.1 ETH
-const amountB = '5600000000000000000000'; // 5600 GLQ
+const currentPoolAddress = "0x04391851210bd132ADDe72De7f07ACede7b4AD97"
+const amountA = '5000000000000000'; // 0.005 ETH
+const amountB = '280000000000000000000'; // 280 GLQ
 
 
 const getPoolState = async () => {
@@ -98,6 +98,7 @@ async function approveToken(tokenAddress, amount) {
       state.liquidity.toString(),
       state.tick
     );
+    console.log(pool)
 
     const position = Position.fromAmounts({
         pool,

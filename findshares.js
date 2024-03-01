@@ -1,7 +1,7 @@
 const { ethers } = require('ethers');
-const provider = new ethers.JsonRpcProvider('https://glq-dataseed.graphlinq.io');
-const walletAddress = '0xBd510d1DD4857061B092420039B44Ca20366F7Fd';
-const nftContractAddress = '0x1e4F1736540b5eddd4788D30aa1030697FF93488'; // NonfungiblePositionManager contract address
+const provider = new ethers.providers.JsonRpcProvider('https://glq-dataseed.graphlinq.io');
+const walletAddress = '0x32152293EE2Cd23F72627339707C265949bb4a28';
+const nftContractAddress = '0x9527542236724B2D1e54F97FC62375a72Bc950cE'; // NonfungiblePositionManager contract address
 
 // ABI fragments needed to fetch NFTs owned by a wallet
 const nftContractABI = [

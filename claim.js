@@ -3,7 +3,7 @@ const NonfungiblePositionManagerABI = require('@uniswap/v3-periphery/artifacts/c
 
 // Configuration
 const providerUrl = 'https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID';
-const privateKey = 'YOUR_WALLET_PRIVATE_KEY';
+const privateKey = '';
 const positionManagerAddress = '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'; // Address for the NonfungiblePositionManager
 
 const provider = new ethers.providers.JsonRpcProvider(providerUrl);
